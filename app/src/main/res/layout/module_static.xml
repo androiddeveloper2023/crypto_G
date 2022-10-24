@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_marginStart="14dp"
+    android:layout_marginEnd="14dp"
+    android:layout_marginTop="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/statistics"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="5dp"
+    style="@style/CoinBitText.BodyAlternate"
+    android:text="Statistics"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_rounded">
+
+        <TextView
+            android:id="@+id/dollar_open_static"
+            style="@style/CoinBitText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="$170.11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/open_static"
+            style="@style/CoinBitText.BodyAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="4dp"
+            android:text="open"
+            app:layout_constraintStart_toStartOf="@+id/dollar_open_static"
+            app:layout_constraintTop_toBottomOf="@+id/dollar_open_static" />
+
+        <TextView
+            android:id="@+id/dollar_today_static"
+            style="@style/CoinBitText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="20dp"
+            android:text="$172.30"
+            app:layout_constraintStart_toStartOf="@+id/open_static"
+            app:layout_constraintTop_toBottomOf="@+id/open_static" />
+
+        <TextView
+            android:id="@+id/todayhigh_static"
+            style="@style/CoinBitText.BodyAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="4dp"
+            android:text="Today's High"
+            app:layout_constraintStart_toStartOf="@+id/dollar_today_static"
+            app:layout_constraintTop_toBottomOf="@+id/dollar_today_static" />
+
+        <TextView
+            android:id="@+id/dolar_todaylow_static"
+            style="@style/CoinBitText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="20dp"
+            android:text="$169.20"
+            app:layout_constraintStart_toStartOf="@+id/todayhigh_static"
+            app:layout_constraintTop_toBottomOf="@+id/todayhigh_static" />
+
+        <TextView
+            android:id="@+id/todaylow_static"
+            style="@style/CoinBitText.BodyAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="4dp"
+            android:text="Today's Low"
+            app:layout_constraintStart_toStartOf="@+id/dolar_todaylow_static"
+            app:layout_constraintTop_toBottomOf="@+id/dolar_todaylow_static" />
+
+        <TextView
+            android:id="@+id/dolarchangetoday_static"
+            style="@style/CoinBitText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="20dp"
+            android:text="$177.32"
+            app:layout_constraintStart_toStartOf="@+id/todaylow_static"
+            app:layout_constraintTop_toBottomOf="@+id/todaylow_static" />
+
+        <TextView
+            android:id="@+id/changetoday_static"
+            style="@style/CoinBitText.BodyAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="4dp"
+            android:text="Change today's"
+            app:layout_constraintStart_toStartOf="@+id/dolarchangetoday_static"
+            app:layout_constraintTop_toBottomOf="@+id/dolarchangetoday_static" />
+
+        <TextView
+            android:id="@+id/month_volume"
+            style="@style/CoinBitText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="12M"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/dollar_open_static" />
+
+        <TextView
+            android:id="@+id/volume"
+            style="@style/CoinBitText.BodyAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Algoritm"
+            app:layout_constraintBottom_toBottomOf="@+id/open_static"
+            app:layout_constraintStart_toStartOf="@+id/month_volume"
+            app:layout_constraintTop_toBottomOf="@+id/month_volume" />
+
+
+        <TextView
+            android:id="@+id/month_avg"
+            style="@style/CoinBitText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="27M"
+            app:layout_constraintBottom_toBottomOf="@+id/dollar_today_static"
+            app:layout_constraintEnd_toEndOf="@+id/volume"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/volume" />
+
+        <TextView
+            android:id="@+id/avgvolume"
+            style="@style/CoinBitText.BodyAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Volume"
+
+            app:layout_constraintBottom_toBottomOf="@+id/todayhigh_static"
+
+            app:layout_constraintStart_toStartOf="@+id/month_avg"
+            app:layout_constraintTop_toBottomOf="@+id/month_avg"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/dollar_marketcap"
+            style="@style/CoinBitText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginTop="20dp"
+            android:text="$ 867.64B"
+            app:layout_constraintBottom_toTopOf="@+id/todaylow_static"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/avgvolume"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/marketcap"
+            style="@style/CoinBitText.BodyAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Market Cap"
+android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/todaylow_static"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/dollar_marketcap"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/dollar_supplay"
+            style="@style/CoinBitText.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:text="18.433"
+            app:layout_constraintBottom_toBottomOf="@+id/dolarchangetoday_static"
+            app:layout_constraintStart_toStartOf="@+id/marketcap"
+            app:layout_constraintTop_toBottomOf="@+id/marketcap" />
+
+        <TextView
+            android:id="@+id/supply"
+            style="@style/CoinBitText.BodyAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="supply"
+            app:layout_constraintBottom_toBottomOf="@+id/changetoday_static"
+            app:layout_constraintStart_toStartOf="@+id/dollar_supplay"
+            app:layout_constraintTop_toBottomOf="@+id/dollar_supplay" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="210dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

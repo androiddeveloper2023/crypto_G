@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.COinMarketsActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        android:id="@+id/layouttoolbarcoin"
+        layout="@layout/module_toolbarss"/>
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+
+<include android:id="@+id/pricecharttop"
+    layout="@layout/modulecharttop"/>
+
+
+         <include
+             android:id="@+id/sparkchartmiddle"
+             layout="@layout/modulechartmiddle" />
+
+         <include android:id="@+id/chartbottom"
+             layout="@layout/modulechartbottom"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <include
+             android:id="@+id/layoutstatic"
+
+             layout="@layout/module_static" />
+
+         <include
+             android:id="@+id/layoutabout"
+             layout="@layout/madule_about" />
+
+
+     </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
